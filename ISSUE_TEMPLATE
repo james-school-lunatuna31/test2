@@ -1,0 +1,49 @@
+name: Bug Report
+description: File a bug report
+title: "[Change]: "
+labels: ["bug", "triage"]
+projects: []
+body:
+  - type: markdown
+    attributes:
+      value: 
+        Let's get a new issue created
+  - type: input
+    id: TrelloCard
+    attributes:
+      label: Trello-Card
+      description: What is the title of the trello card you are working on?
+      placeholder: ex. Add item to cart broken
+    validations:
+      required: true
+  - type: textarea
+    id: what-do-we-need-to-do?
+    attributes:
+      label: Next Steps
+      description: Copy the checklist (if any)
+      placeholder: Checklist here
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      options:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+      default: 0
+    validations:
+      required: true
