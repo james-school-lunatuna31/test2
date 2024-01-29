@@ -1,6 +1,6 @@
 name: Bug Report
 description: Start a new Card
-title: "[Trello Card]: "
+title: [Trello Card]:
 projects: []
 body:
   - type: markdown
