@@ -4,46 +4,43 @@ title: "[Trello Card]:"
 projects: []
 body:
   - type: markdown
-  attributes:
-    value: "## Create an Issue based on a Trello Card"
+    attributes:
+      value: "## Create an Issue based on a Trello Card"
   - type: markdown
-  attributes:
-    value: |
-      This form will help us link a card with all the right info. Let's get started.
+    attributes:
+      value: |
+        This form will help us link a card with all the right info. Let's get started.
   - type: input
     id: initials
     attributes:
       label: Your initials
       description: "Enter your initials below"
       placeholder: "JG"
-      validations:
-        required: true
+    validations:
+      required: true
   - type: input
     id: card-title
     attributes:
       label: Card Title
       description: "What is the title of the trello card?"
       placeholder: "Add item to cart broke"
-      validations:
+    validations:
       required: true
   - type: textarea
-      id: card-description
-      attributes:
+    id: card-description
+    attributes:
       label: Card Description
       description: "What are the details on the card?"
       placeholder: "The cart button for adding items is not working"
-      value: Description of issue here|
-      - [ ] checkbox one if present
-      - [ ] checkbox two if present
-      ...
-      validations:
-        required:true
+      value: "Description of issue here| - [ ] checkbox one if present - [ ] checkbox two if present ..."
+    validations:
+      required: true
   - type: dropdown
-      id: week
-      attributes:
-        label: Week
-        description: "What week is this?"
-        options:
+    id: week
+    attributes:
+      label: Week
+      description: "What week is this?"
+      options:
         - 1
         - 2
         - 3
@@ -58,5 +55,5 @@ body:
         - 12
         - 13
         - 14
-      validations:
-        required: true
+    validations:
+      required: true
