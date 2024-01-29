@@ -5,7 +5,7 @@ projects: []
 body:
   - type: markdown
   attributes:
-    value: "## Create an Issue based on a Trello Card
+    value: "## Create an Issue based on a Trello Card"
   - type: markdown
   attributes:
     value: |
