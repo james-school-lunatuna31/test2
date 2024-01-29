@@ -5,7 +5,7 @@ projects: []
 body:
   - type: markdown
     attributes:
-      value: "## Create an Issue based on a Trello Card"
+      value: "### Create an Issue based on a Trello Card"
   - type: markdown
     attributes:
       value: |
@@ -32,7 +32,17 @@ body:
       label: Card Description
       description: "What are the details on the card?"
       placeholder: "The cart button for adding items is not working"
-      value: "Description of issue here| - [ ] checkbox one if present - [ ] checkbox two if present ..."
+      value: Description of issue here |
+      - [ ] checkbox one if present 
+      - [ ] checkbox two if present ..."
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Trello Card Link
+      description: Paste the link to the card here
+      placeholder: Trello Card Link
     validations:
       required: true
   - type: dropdown
