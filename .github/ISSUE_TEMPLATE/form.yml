@@ -1,35 +1,49 @@
 name: Bug Report
-description: File a bug report
-title: "[Change]: "
-labels: ["bug", "triage"]
+description: Start a new Card
+title: "[Trello Card]: "
 projects: []
 body:
   - type: markdown
-    attributes:
-      value: 
-        Let's get a new issue created
+  attributes:
+    value: "## Create an Issue based on a Trello Card
+  - type: markdown
+  attributes:
+    value: |
+      This form will help us link a card with all the right info. Let's get started.
   - type: input
-    id: TrelloCard
+    id: initials
     attributes:
-      label: Trello-Card
-      description: What is the title of the trello card you are working on?
-      placeholder: ex. Add item to cart broken
-    validations:
+      label: Your initials
+      description: "Enter your initials below"
+      placeholder: "JG"
+      validations:
+        required: true
+  - type: input
+    id: card-title
+    attributes:
+      label: Card Title
+      description: "What is the title of the trello card?"
+      placeholder: "Add item to cart broke"
+      validations:
       required: true
   - type: textarea
-    id: what-do-we-need-to-do
-    attributes:
-      label: Next Steps
-      description: Copy the checklist (if any)
-      placeholder: Checklist here
-    validations:
-      required: true
+      id: card-description
+      attributes:
+      label: Card Description
+      description: "What are the details on the card?"
+      placeholder: "The cart button for adding items is not working"
+      value: Description of issue here|
+      - [ ] checkbox one if present
+      - [ ] checkbox two if present
+      ...
+      validations:
+        required:true
   - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
+      id: week
+      attributes:
+        label: Week
+        description: "What week is this?"
+        options:
         - 1
         - 2
         - 3
@@ -44,6 +58,5 @@ body:
         - 12
         - 13
         - 14
-      default: 0
-    validations:
-      required: true
+      validations:
+        required: true
