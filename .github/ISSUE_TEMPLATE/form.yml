@@ -17,7 +17,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: what-do-we-need-to-do?
+    id: what-do-we-need-to-do
     attributes:
       label: Next Steps
       description: Copy the checklist (if any)
